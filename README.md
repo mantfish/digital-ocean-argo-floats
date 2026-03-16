@@ -34,6 +34,7 @@ Each float is identified by a unique **WMO number** (e.g. `3902607`).
 git clone https://github.com/euro-argo/argo-float-tutorials.git
 cd argo-float-tutorials
 ```
+If you don't have git installed, you can download the repository as a zip file from the [GitHub repository](https://github.com/euro-argo/argo-float-tutorials).
 
 ### Pip (if you already have Python 3.9+)
 
