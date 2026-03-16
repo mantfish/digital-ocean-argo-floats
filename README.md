@@ -1,18 +1,16 @@
-# Argo Float Data Tutorials for Ocean Engineers
-
-A beginner-friendly collection of Python/Jupyter notebooks for downloading and visualising
-Argo profiling float data.  No prior Python experience is assumed.
+# Argo Float Data Tutorial
 
 ---
 
-## What is Argo?
+## What is the Argo program?
 
 [Argo](https://argo.ucsd.edu/) is a global array of ~4,000 autonomous profiling floats that
 drift through the ocean, periodically diving to ~2,000 m and measuring **temperature**,
-**salinity**, and **pressure** on the way back up.  Each float transmits its data via
-satellite — making it freely available online.
+**salinity**, and **pressure** (and sometimes more) on the way back up.  Each float transmits its data via
+satellite, the data then get's checked before being uploaded to a server, making it freely available online.
+After a year, the old data is checked again and adjusted if necessary.
 
-Each float is identified by a unique **WMO number** (e.g. `6902746`).
+Each float is identified by a unique **WMO number** (e.g. `3902607`).
 
 ---
 
@@ -29,23 +27,15 @@ Each float is identified by a unique **WMO number** (e.g. `6902746`).
 
 ## Setup instructions
 
-### Option A — conda (recommended)
-
+### Clone the repository
 ```bash
-# 1. Install Miniconda if you don't have it:
-#    https://docs.conda.io/en/latest/miniconda.html
-
-# 2. Create the environment from the file in this repo
-conda env create -f environment.yml
-
-# 3. Activate it
-conda activate argo-tutorials
-
-# 4. Launch Jupyter
-jupyter notebook
+# Open a terminal and navigate to the directory where you want to clone the repository
+# Then run
+git clone https://github.com/euro-argo/argo-float-tutorials.git
+cd argo-float-tutorials
 ```
 
-### Option B — pip (if you already have Python 3.9+)
+### Pip (if you already have Python 3.9+)
 
 ```bash
 # 1. (Optional but recommended) create a virtual environment
@@ -61,25 +51,6 @@ jupyter notebook
 ```
 
 Then open the `notebooks/` folder and start with `00_getting_started.ipynb`.
-
----
-
-## Internet connection required
-
-The notebooks download data live from the Argo ERDDAP server.  You need an active
-internet connection when running cells that call `argopy`.
-
----
-
-## Key packages used
-
-| Package | Purpose |
-|---|---|
-| [`argopy`](https://argopy.readthedocs.io/) | Download Argo float data |
-| `pandas` | Store and manipulate tabular data |
-| `matplotlib` | Plots and figures |
-| `numpy` | Numerical calculations |
-| `xarray` | Intermediate data format returned by argopy |
 
 ---
 
