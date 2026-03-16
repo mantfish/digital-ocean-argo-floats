@@ -1,0 +1,8 @@
+argopy>=0.1.14
+pandas>=1.5
+matplotlib>=3.6
+numpy>=1.23
+xarray>=2022.11
+jupyter>=1.0
+notebook>=6.5
+scipy>=1.9

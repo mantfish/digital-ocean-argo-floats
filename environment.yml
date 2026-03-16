@@ -1,0 +1,16 @@
+name: argo-tutorials
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - notebook
+  - pandas>=1.5
+  - matplotlib>=3.6
+  - numpy>=1.23
+  - xarray>=2022.11
+  - scipy>=1.9
+  - pip
+  - pip:
+      - argopy>=0.1.14
