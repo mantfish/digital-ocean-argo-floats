@@ -34,9 +34,9 @@ Each float is identified by a unique **WMO number** (e.g. `3902607`).
 git clone https://github.com/euro-argo/argo-float-tutorials.git
 cd argo-float-tutorials
 ```
-If you don't have git installed, you can download the repository as a zip file from the [GitHub repository](https://github.com/euro-argo/argo-float-tutorials).
+If you don't have git installed, you can download the repository as a zip file .
 
-### Pip (if you already have Python 3.9+)
+### Option A: Pip (if you already have Python 3.9+)
 
 ```bash
 # 1. (Optional but recommended) create a virtual environment
@@ -48,6 +48,21 @@ argo-env\Scripts\activate           # Windows
 pip install -r requirements.txt
 
 # 3. Launch Jupyter
+jupyter notebook
+```
+### Option B: If you have conda installed
+
+```bash
+# 1. Install Miniconda if you don't have it:
+#    https://docs.conda.io/en/latest/miniconda.html
+
+# 2. Create the environment from the file in this repo
+conda env create -f environment.yml
+
+# 3. Activate it
+conda activate argo-tutorials
+
+# 4. Launch Jupyter
 jupyter notebook
 ```
 
